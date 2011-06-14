@@ -11,6 +11,5 @@
 
 (defn test!! [project]
   (doto project clean deps)
-  (binding [*exit-after-tests* false]
-    (doseq [n (test-nses project)]
-      (test project (str n)))))
+  (doseq [n (test-nses project)]
+    (test project (str n))))
