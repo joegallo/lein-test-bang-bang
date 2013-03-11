@@ -7,7 +7,7 @@
         [leiningen.test :only [test *exit-after-tests*]]))
 
 (defn test-nses [project]
-  (sort (flatten (map namespaces-in-dir (:test-paths project)))))
+  (sort (mapcat namespaces-in-dir (:test-paths project))))
 
 (defn test!! [project]
   (doto project clean deps)
