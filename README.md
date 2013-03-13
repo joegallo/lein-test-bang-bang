@@ -9,6 +9,6 @@ lein 'test!!'
 
 ## License
 
-Copyright (C) 2011 Joe Gallo
+Copyright (C) 2013 Joe Gallo
 
 Distributed under the Eclipse Public License, the same as Clojure.
