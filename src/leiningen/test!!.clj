@@ -1,9 +1,9 @@
 (ns leiningen.test!!
   (:refer-clojure :exclude [test])
-  (:use [bultitude.core :only [namespaces-in-dir]]
-        [leiningen.clean :only [clean]]
-        [leiningen.deps :only [deps]]
-        [leiningen.test :only [test]]))
+  (:require [bultitude.core :refer [namespaces-in-dir]]
+            [leiningen.clean :refer [clean]]
+            [leiningen.deps :refer [deps]]
+            [leiningen.test :refer [test]]))
 
 (defn test-nses [project]
   (sort (mapcat namespaces-in-dir (:test-paths project))))
