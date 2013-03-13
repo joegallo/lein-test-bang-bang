@@ -1,4 +1,4 @@
-(defproject lein-test-bang-bang "0.2.0-SNAPSHOT"
+(defproject lein-test-bang-bang "0.2.0"
   :description "Run your test namespaces in separate JVMs"
   :url "https://github.com/joegallo/lein-test-bang-bang/"
   :license {:name "Eclipse Public License"
